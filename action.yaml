@@ -1,0 +1,14 @@
+name: 'DCI Lint - Git Repo'
+description: 'Execute a linting process by invoking the DCI Lint API with a specified request.'
+inputs:
+  lint-git-repo-request:
+    description: 'The JSON string representation of the request to send to the DCI Lint API'
+    required: true
+outputs:
+  lint-git-repo-response:
+    description: 'The response JSON string produced by the DCI Lint API in response to whatever was placed in the input.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.lint-git-repo-request }}
