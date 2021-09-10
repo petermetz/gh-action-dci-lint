@@ -1,4 +1,4 @@
-FROM ghcr.io/petermetz/dci-lint:2021-09-07---build-dockerfile-ubuntu-2004
+FROM ghcr.io/petermetz/dci-lint:0.4.0
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY docker-entrypoint.sh /docker-entrypoint.sh
