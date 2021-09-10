@@ -3,6 +3,8 @@
 set -e
 
 echo "$(env)"
+echo "=========="
+echo "$1"
 echo "::lint-git-repo-request::Sending request to DCI Lint API..."
 
 RESPONSE=$(node \
