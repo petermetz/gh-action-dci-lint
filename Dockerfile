@@ -1,4 +1,4 @@
-FROM ghcr.io/petermetz/dci-lint:0.4.0
+FROM ghcr.io/petermetz/dci-lint:0.5.1
 
 USER root
 RUN apt update && apt install -y jq
