@@ -9,6 +9,8 @@ outputs:
     description: 'The response JSON string produced by the DCI Lint API in response to whatever was placed in the input.'
   lint-git-repo-error-count:
     description: 'The number of linter errors located in the response object.'
+  lint-git-repo-exit-code:
+    description: "Exit code of the operating system process that executed the linting."
 runs:
   using: 'docker'
   image: 'Dockerfile'
